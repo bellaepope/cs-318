@@ -1,13 +1,46 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(142, 182, 143);
+    background-color: #f1cca6;
     text-align:center;
     margin: 0;
 }
 header{
-    background-color: rgb(224, 186, 198);
+    background-color: #f2e6b8;
     padding: 2rem;
 }
 h1{
-    color: ;
+    color: #ff7d8e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+h2{
+    color: #ff7d8e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+    background-color: #f0b1b9;
+    margin: 0;
+    padding: 1rem;
+}
+h3{color: #fc7789;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size:large;
+}
+p{
+    color: #e97786;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+nav>a{
+    color: #e98996;
+    margin: 0rem 1rem 1rem;
+    font-weight: bold;
+}
+li{
+   color: #e97786;
+    list-style-position: inside;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }

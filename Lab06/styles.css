@@ -23,13 +23,13 @@ h2{
     margin: 0;
     padding: 1rem;
 }
-h3{color: #e7d7c1;
+h3{color: #8c1c13;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     font-size:large;
 }
 p{
-    color: #e7d7c1;
+    color: #8c1c13;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
@@ -39,7 +39,7 @@ nav>a{
     font-weight: bold;
 }
 li{
-   color: #e7d7c1;
+   color: #8c1c13;
     list-style-position: inside;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     

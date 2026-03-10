@@ -3,6 +3,10 @@ body{
     background-color: #f1cca6;
     text-align:center;
     margin: 0;
+    background-image: url(Images/12311f78-4aa4-47b3-a722-ca535bd49218_091fa95d.webp);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 header{
     background-color: #bf4342;

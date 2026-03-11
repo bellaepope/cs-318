@@ -78,3 +78,13 @@ article.show{
 span.rotate{
     transform: rotate(0);
 }
+.sidelink{
+    background-color: #27213c;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    position: fixed;
+    transform: rotate(90deg);
+    z-index: 1;
+    
+}

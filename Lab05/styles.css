@@ -1,0 +1,25 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+header{
+    background-color: #275218;
+    color: #fff;
+}
+header>img{
+    max-width: 6rem;
+    margin: 1rem 0;
+    vertical-align: top;
+}
+header>nav>a{
+    background-color: #fff;
+    color: #275218;
+    text-decoration: none;
+    padding: 1rem;
+}
+header>nav{
+    top: 0;
+    right: 0;
+    bottom: 1rem;
+    left: 1rem;
+}

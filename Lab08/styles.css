@@ -67,8 +67,8 @@ section span{
     position: absolute;
     top: 15rem;
     font-size: 2rem;
-    left:50%;
-    transform:translateX(-50%) rotate(180deg);
+    left:50%;/* The value should be calc(50% - 11px) not just 50%*/
+    transform:translateX(-50%) rotate(180deg);/*Delete the translateX(-50%) you don't need it.*/
 }
 .accordion{
     cursor: pointer;

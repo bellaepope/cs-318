@@ -4,6 +4,7 @@ body {
     color: #fff;
     background-color: rgb(64, 73, 61);
 }
+
 header {
     background-image: url("images/lab7-backgroundimage.jpg");
     background-size: cover;
@@ -16,13 +17,16 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 h1 {
     display: none;
 }
+
 header > img {
     width: 23rem;
     max-width: 100%;
 }
+
 nav {
     flex-basis: 100%;
     text-align: center;
@@ -56,11 +60,13 @@ main img {
     padding: 10rem 0 10rem 4rem;
     text-shadow: 2px 2px 2px #0000008f;
 }
+
 .gallery h2 {
     background-color: rgb(245, 245, 245);
     color: rgb(15, 15, 46);
     padding: 2rem 4rem;
 }
+
 @media (min-width:1100px) {
 
     nav {

@@ -6,16 +6,14 @@ body {
 }
 
 header {
-    background-image: url("images/lab7-backgroundimage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(Images/trees.png);
     background-position: center;
-
     padding: 1rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -55,7 +53,7 @@ main img {
 }
 
 .about-me h2 {
-    background-image: url("images/lab7-me.jpg");
+    background-image: url("images/me.jpg");
     background-size: cover;
     padding: 10rem 0 10rem 4rem;
     text-shadow: 2px 2px 2px #0000008f;

@@ -74,6 +74,7 @@ header a:hover {
   height: 5rem;
   position: absolute;
   left: 30%;
+  bottom: 0;
   animation: rise 10s ease-in 1 forwards;
 }
 @keyframes rise {

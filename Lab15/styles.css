@@ -67,7 +67,7 @@ footer a {
   margin: .25rem;
 }
 section.headline {
-  background-image: url(Images/cafe.jpg);
+  background-image: url(Images/cafe.png);
   background-size: cover;
   background-color: rgb(23, 0, 65);
   padding: 5rem 2rem;
@@ -185,15 +185,15 @@ h3 {
 }
 
 .menu h2:after, .menu h2:before {
-  content: url(Images/menu-icon.png);
+  content: url(Images/menu.svg);
 }
 
 .about h2:after, .about h2:before {
-  content: url(Images/about-icon.png);
+  content: url(Images/coffee.svg);
 }
 
 .order h2:after, .order h2:before {
-  content: url(Images/order-icon.png);
+  content: url(Images/take-away.svg);
   width: 2rem;
   top: 1.5rem;
 }

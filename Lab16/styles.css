@@ -44,24 +44,6 @@ header a:hover {
 .rover:hover {
   animation-play-state: paused;
 }
-.rover:after {
-  content: url(https://mars.nasa.gov/system/stylesheets/images/mars2020/rover-parts/antenna.png);
-  width: 6rem;
-  height: 6rem;
-  position: absolute;
-  left: 2.25rem;
-  top: 1.6rem;
-  z-index: 1;
-  transform-origin: center bottom;
-  animation: rotate 2s linear 0s infinite alternate;
-}
-.planet {
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  left: 30%;
-  animation: rise 10s ease-in 1 forwards;
-}
 .mars {
   position: absolute;
   width: 100%;
@@ -71,10 +53,28 @@ header a:hover {
   bottom: 0;
   z-index: 2;
 }
+.rover:after {
+  content: url(Images/dish.svg);
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 2.25rem;
+  top: 1.6rem;
+  z-index: 1;
+  transform-origin: center bottom;
+  animation: rotate 2s linear 0s infinite alternate;
+}
 .mars h1 {
   margin-left: 5rem;
   font-size: 3rem;
   font-weight: 900;
+}
+.planet {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 30%;
+  animation: rise 10s ease-in 1 forwards;
 }
 @keyframes rise {
   from {

@@ -63,7 +63,13 @@ h4 {
 }
 section > img {
     max-height: 10rem;
+    /*Missing grid-area (reference the diagram given in the lab to figure out the correct values for grid-area) */
 }
+/*Missing 
+section>p{
+    grid-area (reference the diagram given in the lab to figure out the correct values for grid-area)
+}
+    */
 section:nth-child(2) {
     display: block;
 }

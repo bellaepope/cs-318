@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #f5f0e0;
+  --red: #e8453c;
+  --teal: #2ab5a0;
+  --yellow: #f5c842;
+  --text: #333;
+  --card-bg: #fff;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--cream);
+  color: var(--text);
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  background: var(--cream);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--yellow);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border: 3px solid var(--text);
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.logo-text span {
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.nav-links a.active {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.basket-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ── HERO ── */
+.hero {
+  margin: 0 48px 32px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 260px;
+  background: linear-gradient(135deg, #b5651d 0%, #8b4513 40%, #6b3410 100%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 80px 50px at 20% 40%, rgba(200,140,60,0.4) 0%, transparent 70%),
+    radial-gradient(ellipse 120px 70px at 60% 30%, rgba(180,120,50,0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 60px 40px at 80% 60%, rgba(160,100,40,0.4) 0%, transparent 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px 32px;
+}
+
+.hero-content h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.88);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ── ABOUT CARDS ── */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 48px;
+  margin-bottom: 24px;
+}
+
+.about-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.about-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.about-img.bread {
+  background: radial-gradient(circle at 40% 40%, #d4935a, #8b4513 70%);
+}
+
+.about-img.coffee {
+  background: radial-gradient(circle at 50% 35%, #e8e0d0, #6b4c3b 60%);
+}
+
+.about-text h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.about-text p {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* ── HOURS CARD ── */
+.hours-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin: 0 48px 24px;
+  padding: 28px 28px 28px 20px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.clock-graphic {
+  width: 130px;
+  height: 140px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hours-text h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px 32px;
+  font-size: 13.5px;
+}
+
+.hours-grid .day {
+  font-weight: 700;
+}
+
+.hours-grid .time::before {
+  content: '• ';
+  color: var(--text);
+}
+
+/* ── THE GOODS ── */
+.goods-header {
+  background: var(--red);
+  margin: 0 48px;
+  border-radius: 12px 12px 0 0;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.goods-header h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  color: #fff;
+}
+
+.goods-emoji {
+  font-size: 22px;
+}
+
+.goods-grid {
+  background: var(--card-bg);
+  margin: 0 48px;
+  border-radius: 0 0 12px 12px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 32px;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.goods-item h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 15px;
+  color: var(--red);
+  text-align: center;
+}
+
+.goods-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+.goods-photo.turtle  { background: radial-gradient(circle at 40% 35%, #c9955a, #5a2d0c); }
+.goods-photo.macaron { background: radial-gradient(circle at 50% 40%, #c8e6a0, #a8c878 50%, #88a858); }
+.goods-photo.straw   { background: radial-gradient(circle at 50% 30%, #fff, #f5d0c0 40%, #e85050); }
+.goods-photo.peach   { background: radial-gradient(circle at 45% 35%, #ffd080, #e88040 50%, #b05020); }
+.goods-photo.choco   { background: radial-gradient(circle at 40% 30%, #6090c0, #3060a0 50%, #102060); }
+.goods-photo.custard { background: radial-gradient(circle at 45% 35%, #ffcc88, #e8883a 50%, #c05820); }
+
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  justify-content: center;
+}
+
+.qty-row input {
+  width: 80px;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.add-btn {
+  width: 100%;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.add-btn:hover {
+  background: #c93530;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--teal);
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}

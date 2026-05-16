@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Expedition — Deep Abyss</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">&#9661; DEEP ABYSS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="expedition.html" class="active">Expedition</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Join the <em>Expedition</em></h1>
+      <p>Sign up to receive mission updates, dive logs, and discovery alerts from our research team.</p>
+    </section>
+
+    <!-- Expedition info + form side by side -->
+    <section class="split-layout">
+      <article class="two-thirds">
+        <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=900&q=80" alt="Underwater submersible lights in the deep ocean">
+        <h2>The 2026 Deep Survey Mission</h2>
+        <p>Our research vessel departs this autumn for a 60-day expedition into the Hadal Zone — the deepest parts of the ocean, found only in oceanic trenches. Using a next-generation remotely operated vehicle (ROV), we will descend to depths never before explored by our team.</p>
+        <p>Equipped with 4K low-light cameras, sediment samplers, and specimen collection arms, the ROV will transmit live footage from up to 10,000 meters below sea level. Our goals include cataloguing new species, collecting water samples for climate research, and mapping previously uncharted seafloor terrain.</p>
+
+        <div class="mission-list">
+          <h3>Mission Objectives</h3>
+          <ol>
+            <li>Map 2,000 km² of unexplored seafloor terrain</li>
+            <li>Collect sediment core samples from the Hadal Zone</li>
+            <li>Catalog and document new species candidates</li>
+            <li>Measure microplastic contamination at extreme depths</li>
+            <li>Test new bioluminescence detection sensors</li>
+          </ol>
+        </div>
+      </article>
+
+      <aside class="one-third sidebar">
+        <h3 class="sidebar-title">Mission Stats</h3>
+        <div class="stat-card">
+          <span class="stat-num">60</span>
+          <span class="stat-label">Days at sea</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">10km</span>
+          <span class="stat-label">Maximum dive depth</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Crew & scientists aboard</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">ROVs deployed</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Sign-up form -->
+    <section class="form-section">
+      <h2 class="section-title">Stay in the Loop</h2>
+      <p class="form-intro">Fill out the form below to receive expedition updates, species discoveries, and behind-the-scenes dive logs directly to your inbox.</p>
+
+      <div class="form-wrap">
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jacques Cousteau">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+
+          <label for="interest">Area of Interest</label>
+          <input type="text" id="interest" name="interest" placeholder="e.g. Marine biology, Photography...">
+
+          <label for="message">Why do you want to follow this expedition?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what draws you to the deep sea..."></textarea>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="newsletter" id="newsletter">
+            Subscribe to our monthly ocean newsletter
+          </label>
+
+          <button type="button" class="btn-glow submit-btn">Send My Info</button>
+        </fieldset>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&#9661; Deep Abyss &mdash; An Ocean Exploration Project &mdash; Lab 18</p>
+  </footer>
+
+</body>
+</html>
